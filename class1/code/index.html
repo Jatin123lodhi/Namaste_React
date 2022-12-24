@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- <h1>Hello World</h1> -->
+    <div id="root"></div>
+     
+    <script>
+        // using pure js
+
+        // const heading = document.createElement('h1');
+        // heading.innerHTML = 'Namaste JS';
+        // document.getElementById('root').appendChild(heading);
+
+        //now using react -- 
+        const heading = React.createElement('h1',{},'Namaste React');
+        ReactDOM.render(heading,document.getElementById('root'));
+        
+    </script>
 </body>
+
 </html>
