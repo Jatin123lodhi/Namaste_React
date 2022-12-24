@@ -1,0 +1,30 @@
+ What is emmet - 
+  Emmet is a plugin for many popular text editiors like vs code which helps to write code faster.
+  
+  You can use > operator to nest elements inside each other:
+  
+  div>ul>li
+  
+  ...will produce 
+  
+  <div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+
+Sibling: +
+Use + operator to place elements near each other, on the same level:
+
+div+p+bq
+
+...will output
+
+<div></div>
+<p></p>
+<blockquote></blockquote>
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Difference between library and framework ?
+
