@@ -1,0 +1,61 @@
+ What is emmet - 
+  Emmet is a plugin for many popular text editiors like vs code which helps to write code faster.
+  
+  You can use > operator to nest elements inside each other:
+  
+  div>ul>li
+  
+  ...will produce 
+  
+  <div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+
+Sibling: +
+Use + operator to place elements near each other, on the same level:
+
+div+p+bq
+
+...will output
+
+<div></div>
+<p></p>
+<blockquote></blockquote>
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What is async and defer ? 
+async and defer are boolean attributes which
+are used with script tags which are used to load 
+the external scripts efficeintly into ourweb page
+
+when you load a web page then two major things
+happens in the browser
+
+1.html parsing
+2.loading of the script,  it has two parts
+(fetching the script from the n/w ) and
+(executing the script line by line)
+
+
+normal script tag - 
+ html parsing, loading script, exe scrpit, html par
+
+async script tag -
+ html parsing with loading script , exe script,html p
+defer script tag -
+ html parsing with loading script , html , scrpi exe
+
+when to use what - 
+the async attribute does not gaurante the order of
+execution of the script but defer does
+
+like there are multiple scripts depenedent on each
+other, so we should use defer
+
+if we have some script like google analytic 
+which is generally independent of any other sciprt
+in that case we should use async
+
